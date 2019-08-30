@@ -1,5 +1,5 @@
 
-
+let cursos = document.getElementsByClassName("curso");
 
 let fecha = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
 let obj = {
@@ -8,6 +8,7 @@ let obj = {
    c: 3,
    d: 4
 };
+console.log(cursos[0].children[0].textContent);
 console.log(Object);
 console.log(Object.keys(obj).length);
 console.log(obj.lenght);
