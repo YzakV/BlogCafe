@@ -9,7 +9,7 @@ let obj = {
    d: 4
 };
 console.log(Object);
-console.log(Object.values(obj));
+console.log(Object.keys(obj).length);
 console.log(obj.lenght);
 // for(let i in fecha){
 //    console.log(i);
