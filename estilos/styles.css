@@ -15,6 +15,7 @@ body {
 /* GLOBALES */
 .contenedor {
    max-width: 120rem;
+   width: 95%;
    margin: 0 auto;
 }
 h1, h2, h3, h4, h5 {
@@ -95,7 +96,35 @@ img {max-width: 100%;}
    flex-wrap: wrap;
 }
 .blog, .cursos {
-   flex-grow: 0;
+   /* flex-grow: 0;
    flex-shrink: 0;
-   flex-basis: 100%;
+   flex-basis: 100%; */
+   flex: 0 0 100%;
+}
+.blog {
+   order: 1;
+}
+@media (min-width: 768px){
+   .contenido-principal {
+      justify-content: space-between;
+   }
+   .blog {
+      flex-basis: 66.66%;
+      order: 0;
+   }
+   .cursos {
+      flex-basis: calc(33.33% - 3rem);
+   }
+}
+
+/* OPCIONAL */
+.entrada-blog {
+   display: flex;
+   justify-content: space-between;
+}
+.entrada-blog .imagen {
+   flex: 0 0 40%;
+}
+.entrada-blog .contenido-blog {
+   flex: 0 0 calc(60% - 2rem);
 }
