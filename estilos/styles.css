@@ -119,12 +119,35 @@ img {max-width: 100%;}
 
 /* OPCIONAL */
 .entrada-blog {
-   display: flex;
-   justify-content: space-between;
+   margin-bottom: 2rem;
+   border-bottom: 1px solid #e1e1e1;
 }
-.entrada-blog .imagen {
+.entrada-blog:last-of-type {
+   border: none;
+}
+/* Esto aplica solo si se le da un display: flex a la "entrada-blog" */
+
+/* .entrada-blog .imagen {
    flex: 0 0 40%;
 }
 .entrada-blog .contenido-blog {
    flex: 0 0 calc(60% - 2rem);
+} */
+/* .contenido-blog h3 {
+   line-height: 2.5rem;
+} */
+/* ---------------------------------------------- */
+
+/* CURSOS */
+
+.cursos-lista {
+   padding: 0;
+   list-style: none;
+}
+.curso {
+   padding-bottom: 3rem;
+   border-bottom: 1px solid #e1e1e1;
+}
+.curso:last-of-type {
+   border: none;
 }
