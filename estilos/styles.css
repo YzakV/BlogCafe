@@ -34,6 +34,17 @@ img {max-width: 100%;}
 .no-margin {
    margin: 0;
 }
+/* GRID */
+@media (min-width: 768px){
+   .grid {
+      display: flex;
+      justify-content: space-between;
+   }
+   .col-6 {
+      flex: 0 0 calc(50% - 1rem);
+   }
+}
+
 /* BOTONES */
 .boton {
    display: block;
@@ -207,3 +218,5 @@ img {max-width: 100%;}
 .site-footer p span {
    font-weight: 700;
 }
+
+/* SECCION - NOSOTROS */

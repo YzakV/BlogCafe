@@ -19,5 +19,3 @@ console.log(obj.lenght);
 // for(let i = 0; i < fecha.length; i++){
 //    console.log(fecha[i]);
 // }
-
-
