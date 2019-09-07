@@ -39,6 +39,10 @@ img {max-width: 100%;}
    .grid {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   .centrar-columnas {
+      justify-content: center;
    }
    .col-4 {
       flex: 0 0 calc(33.33% - 1rem)  
@@ -48,6 +52,12 @@ img {max-width: 100%;}
    }
    .col-8 {
       flex: 0 0 calc(66.66% - 1rem);
+   }
+   .col-10 {
+      flex: 0 0 calc(83.33% - 1rem);
+   }
+   .col-12 {
+      flex: 0 0 100%;
    }
 }
 
@@ -63,10 +73,14 @@ img {max-width: 100%;}
    font-weight: 700;
    text-transform: uppercase;
    font-size: 2rem;
+   border: none;
+   cursor: pointer;
+   flex: 0 0 100%;
 }
 @media (min-width: 768px){
    .boton {
       display: inline-block;
+      flex: 0 0 auto;
    }
 }
 .boton-primario {
@@ -226,4 +240,36 @@ img {max-width: 100%;}
    font-weight: 700;
 }
 
-/* SECCION - NOSOTROS */
+/* CONTACTO */
+.formulario-contacto {
+   background-color: #ffffff;
+   padding: 5rem;
+}
+
+@media (min-width: 768px){
+   .formulario-contacto {
+      margin-top: -10rem;
+   }
+}
+
+.formulario-contacto .campo {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+}
+.formulario-contacto .campo label {
+   flex: 0 0 8rem;
+}
+.formulario-contacto .campo input:not([type="submit"]), textarea {
+   flex: 1;
+   border: 1px solid #e1e1e1;
+   padding: 1rem;
+}
+.formulario-contacto textarea {
+   height: 20rem;
+}
+.formulario-contacto .enviar {
+   display: flex;
+   justify-content: end;
+}
+
